@@ -7,7 +7,7 @@
 
 :root {
   --c-lalala: rgb(21, 41, 23);
-  --c-dark: #212529;
+  --c-dark: #115636;
   --c-brand: #5e9463;
   --c-brand-light: #8bd893;
   --c-brand-rgb: 21, 41, 23;
@@ -117,4 +117,25 @@ h2 {
 }
 .hero-btns {
   font-size: 26px;
+}
+
+/* SECTION TITLE */
+
+.section-title {
+  color: var(--c-dark);
+  margin-bottom: 40px;
+}
+
+.section-title .line {
+  width: 60px;
+  height: 4px;
+  background-color: var(--c-brand);
+  margin: 16px auto 24px auto;
+}
+
+.section-title p {
+  color: var(--c-body);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
