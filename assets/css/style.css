@@ -6,12 +6,14 @@
 /* VARIABLES */
 
 :root {
+  --c-lalala: rgb(21, 41, 23);
   --c-dark: #212529;
   --c-brand: #5e9463;
   --c-brand-light: #8bd893;
-  --c-brand-rgb: 78, 87, 212;
+  --c-brand-rgb: 21, 41, 23;
   --c-body: #727272;
   --font-base: "Satoshi-Regular", sans-serif;
+  --font-title: "Stardom", serif;
   --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
   --transition: all 0.5s ease;
 }
@@ -66,6 +68,7 @@ img {
 
 .navbar-nav .nav-link {
   font-weight: 500;
+  font-size: 22px;
   color: var(--c-dark);
 }
 
@@ -77,7 +80,7 @@ img {
 
 .btn {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 22px;
   text-transform: uppercase;
   border-radius: 0;
   padding: 10px 24px;
@@ -97,6 +100,21 @@ img {
 /* HERO */
 
 #hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.438)),
+  background: linear-gradient(
+      rgba(var(--c-brand-rgb), 0.607),
+      rgba(var(--c-brand-rgb), 0.638)
+    ),
     url(../images/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+h1 {
+  font-family: var(--font-title);
+}
+
+h2 {
+  font-size: 40px;
+}
+.hero-btns {
+  font-size: 26px;
 }
