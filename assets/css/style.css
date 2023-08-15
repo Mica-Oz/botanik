@@ -282,3 +282,13 @@ h2 {
   background-color: white;
   transform: rotate(45deg);
 }
+
+/* SPEAKERS */
+
+.speaker-content {
+  background-color: var(--c-brand);
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  width: calc(100% - 50px);
+}
