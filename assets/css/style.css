@@ -75,6 +75,7 @@ img {
 .image-zoom-wrapper {
   overflow: hidden;
   position: relative;
+  background-color: #115636;
 }
 .image-zoom-wrapper img {
   transition: var(--transition);
@@ -241,4 +242,24 @@ h2 {
 }
 #counter h6 {
   font-size: 18px;
+}
+
+/* GALLERY */
+.gallery-item img {
+  opacity: 0.7;
+}
+
+.gallery-item .iconbox {
+  background-color: var(--c-brand);
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.gallery-item:hover .iconbox {
+  opacity: 1;
+  top: 50%;
 }
