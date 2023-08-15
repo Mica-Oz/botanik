@@ -210,6 +210,16 @@ h2 {
 }
 
 /* COUNTER */
+#counter {
+  color: white;
+  background: linear-gradient(
+      rgba(var(--c-brand-rgb), 0.807),
+      rgba(var(--c-brand-rgb), 0.838)
+    ),
+    url(../images/counter.jpg);
+  background-position: center;
+  background-size: cover;
+}
 #counter h6 {
   font-size: 18px;
 }
