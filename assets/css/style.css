@@ -6,12 +6,13 @@
 /* VARIABLES */
 
 :root {
-  --c-lalala: rgb(21, 41, 23);
-  --c-dark: #115636;
-  --c-brand: #5e9463;
+  --c-lalala: #0c1622;
+  --c-dark: rgb(15, 44, 77);
+  --c-brand: #6d849a;
   --c-brand-rgb2: 94, 148, 99;
-  --c-brand-light: #8bd893;
-  --c-brand-rgb: 21, 41, 23;
+  --c-brand-light: #d8e4eb;
+  --c-brand-lightrgb: rgb(216, 228, 235, 0.9);
+  --c-brand-rgb: 15, 44, 77;
   --c-body: #727272;
   --font-base: "Satoshi-Regular", sans-serif;
   --font-title: "Stardom", serif;
@@ -89,6 +90,7 @@ img {
 
 .navbar {
   box-shadow: var(--box-shadow);
+  opacity: 0.9;
 }
 
 .navbar-nav .nav-link {
@@ -99,6 +101,9 @@ img {
 
 .navbar-nav .nav-link.active {
   color: var(--c-brand);
+}
+#logo {
+  width: 05vw;
 }
 
 /* BTN */
@@ -126,12 +131,23 @@ img {
 
 #hero {
   background: linear-gradient(
-      rgba(var(--c-brand-rgb), 0.607),
-      rgba(var(--c-brand-rgb), 0.638)
+      rgba(var(--c-brand-rgb), 0.407),
+      rgba(var(--c-brand-rgb), 0.438)
     ),
-    url(../images/hero-bg.jpg);
+    url(../images/vid.mp4);
   background-position: center;
   background-size: cover;
+}
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
 h1 {
   font-family: var(--font-title);
@@ -165,6 +181,11 @@ h2 {
   margin-right: auto;
   font-size: 20px;
 }
+/* ABOUT */
+
+#about {
+  background-color: var(--c-brand-light);
+}
 
 /* ICON BOX */
 
@@ -180,10 +201,10 @@ h2 {
   flex: none;
 }
 .abouth1 {
-  color: #115636;
+  color: var(--c-dark);
 }
 .abouth5 {
-  color: #115636;
+  color: var(--c-brand);
 }
 
 /* OFFERINGS */
