@@ -7,7 +7,7 @@
 
 :root {
   --c-lalala: #0c1622;
-  --c-dark: rgb(15, 44, 77);
+  --c-dark: #0f2c4d;
   --c-brand: #6d849a;
   --c-brand-rgb2: 94, 148, 99;
   --c-brand-light: #d8e4eb;
@@ -76,7 +76,7 @@ img {
 .image-zoom-wrapper {
   overflow: hidden;
   position: relative;
-  background-color: #115636;
+  background-color: #0f2c4d;
 }
 .image-zoom-wrapper img {
   transition: var(--transition);
@@ -90,7 +90,7 @@ img {
 
 .navbar {
   box-shadow: var(--box-shadow);
-  opacity: 0.9;
+  opacity: 0.75;
 }
 
 .navbar-nav .nav-link {
@@ -213,6 +213,10 @@ h2 {
   position: relative;
   overflow: hidden;
   z-index: 2;
+  background-color: white;
+}
+.offerings .iconbox {
+  background-color: rgb(228, 228, 228);
 }
 
 .offerings::after {
@@ -257,7 +261,7 @@ h2 {
       rgba(var(--c-brand-rgb), 0.807),
       rgba(var(--c-brand-rgb), 0.838)
     ),
-    url(../images/counter.jpg);
+    url(../images/counter3.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -305,6 +309,12 @@ h2 {
 }
 
 /* SPEAKERS */
+#speakers {
+  background-color: var(--c-dark);
+}
+#speakers h1 {
+  color: var(--c-brand-light);
+}
 
 .speaker-content {
   background-color: var(--c-brand);
@@ -319,7 +329,7 @@ h2 {
 }
 
 .speaker img {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .speaker:hover .speaker-content {
@@ -332,6 +342,7 @@ h2 {
 #contact {
   position: relative;
   z-index: 2;
+  background-color: var(--c-brand-light);
 }
 
 #contact::after {
@@ -342,7 +353,7 @@ h2 {
       rgba(var(--c-brand-rgb), 0.807),
       rgba(var(--c-brand-rgb), 0.838)
     ),
-    url(../images/counter.jpg);
+    url(../images/counter1.jpg);
   background-position: center;
   background-size: cover;
   position: absolute;
@@ -396,7 +407,7 @@ footer .line {
   margin-top: 20px;
 }
 footer img {
-  width: 70%;
+  width: 20%;
 }
 
 .social-icons a {
