@@ -1,11 +1,15 @@
 {
   "name": "botanik",
   "version": "1.0.0",
-  "description": "avl site",
-  "main": "index.html",
+  "description": "AVL WEB",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "mica oz",
+  "repository": {
+    "type": "git",
+    "url": "botanik"
+  },
+  "author": "",
   "license": "ISC"
 }
