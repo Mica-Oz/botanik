@@ -6,16 +6,22 @@
 /* VARIABLES */
 
 :root {
-  --c-lalala: #0c1622;
-  --c-dark: #0f2c4d;
-  --c-brand: #6d849a;
-  --c-brand-rgb2: 94, 148, 99;
-  --c-brand-light: #d8e4eb;
-  --c-brand-lightrgb: rgb(216, 228, 235, 0.9);
-  --c-brand-rgb: 15, 44, 77;
-  --c-body: #727272;
+  --c-dark4: #000000;
+  --c-dark3: #4e443f;
+  --c-dark2: #6a6867;
+  --c-dark1: #9f8f7f;
+  --c-dark: #a66738;
+  --c-brand: #c3976b;
+  --c-brand-rgb: 195, 151, 107;
+  --c-light: #d0b192;
+  --c-lightrgb: rgb(208, 176, 144);
+  --c-light1: #e5d9ba;
+  --c-light2: #f8f1d9;
+  --c-light3: #fffcf3;
+
+  --c-body: #4e443f;
   --font-base: "Satoshi-Regular", sans-serif;
-  --font-title: "Stardom", serif;
+  --font-title: "Perpetua", serif;
   --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
   --transition: all 0.5s ease;
 }
@@ -49,7 +55,7 @@ a {
   transition: var(--transition);
 }
 a:hover {
-  color: var(--c-brand-light);
+  color: var(--c-light);
 }
 
 img {
@@ -90,13 +96,14 @@ img {
 
 .navbar {
   box-shadow: var(--box-shadow);
-  opacity: 0.75;
+  background-color: #c3976b;
+  opacity: 0.85;
 }
 
 .navbar-nav .nav-link {
   font-weight: 500;
-  font-size: 22px;
-  color: var(--c-dark);
+  font-size: 26px;
+  color: var(--c-light2);
 }
 
 .navbar-nav .nav-link.active {
@@ -110,29 +117,38 @@ img {
 
 .btn {
   font-weight: 600;
-  font-size: 22px;
+  font-size: 26px;
   text-transform: uppercase;
   border-radius: 0;
   padding: 10px 24px;
 }
 
 .btn-brand {
-  background-color: var(--c-brand);
-  color: white;
+  background-color: var(--c-dark);
+  color: var(--c-light2);
+}
+.btn-brand-light {
+  background-color: var(--c-light2);
+  color: var(--c-dark3);
 }
 
 .btn-brand:hover {
-  background-color: var(--c-brand-light);
-  border-color: var(--c-brand-light);
-  color: white;
+  background-color: var(--c-light);
+  border-color: var(--c-light);
+  color: var(--c-light2);
+}
+.btn-brand-light:hover {
+  background-color: var(--c-brand);
+  border-color: var(--c-brand);
+  color: var(--c-dark3);
 }
 
 /* HERO */
 
 #hero {
   background: linear-gradient(
-      rgba(var(--c-brand-rgb), 0.407),
-      rgba(var(--c-brand-rgb), 0.438)
+      rgba(var(--c-brand-rgb), 0.307),
+      rgba(var(--c-brand-rgb), 0.238)
     ),
     url(../images/vid.mp4);
   background-position: center;
@@ -148,6 +164,10 @@ img {
   top: 0;
   bottom: 0;
   z-index: -1;
+}
+#hero h1 {
+  color: #e5d9ba;
+  font-size: 120px;
 }
 h1 {
   font-family: var(--font-title);
@@ -184,7 +204,9 @@ h2 {
 /* ABOUT */
 
 #about {
-  background-color: var(--c-brand-light);
+  background-color: var(--c-light);
+}
+#abt-img {
 }
 
 /* ICON BOX */
@@ -310,10 +332,10 @@ h2 {
 
 /* SPEAKERS */
 #speakers {
-  background-color: var(--c-dark);
+  background-color: var(--c-dark3);
 }
 #speakers h1 {
-  color: var(--c-brand-light);
+  color: var(--c-light);
 }
 
 .speaker-content {
@@ -342,7 +364,7 @@ h2 {
 #contact {
   position: relative;
   z-index: 2;
-  background-color: var(--c-brand-light);
+  background-color: var(--c-light);
 }
 
 #contact::after {
@@ -433,7 +455,7 @@ footer img {
 
 /* attorneys */
 #lawyers {
-  background-color: var(--c-brand-light);
+  background-color: var(--c-light);
 }
 #lawyers h1 {
   color: var(--c-dark);
