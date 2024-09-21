@@ -96,7 +96,7 @@ img {
 
 .navbar {
   box-shadow: var(--box-shadow);
-  background-color: #c3976b;
+  background-color: var(--c-dark3);
   opacity: 0.85;
 }
 
