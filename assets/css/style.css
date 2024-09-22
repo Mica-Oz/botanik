@@ -20,7 +20,7 @@
   --c-light3: #fffcf3;
 
   --c-body: #4e443f;
-  --font-base: "Satoshi-Regular", sans-serif;
+  --font-base: "Aptos Narrow", sans-serif;
   --font-title: "Perpetua", serif;
   --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
   --transition: all 0.5s ease;
@@ -82,7 +82,7 @@ img {
 .image-zoom-wrapper {
   overflow: hidden;
   position: relative;
-  background-color: #0f2c4d;
+  background-color: var(--c-brand);
 }
 .image-zoom-wrapper img {
   transition: var(--transition);
@@ -101,11 +101,16 @@ img {
 }
 
 .navbar-nav .nav-link {
-  font-weight: 500;
+  /* font-weight: 500; */
   font-size: 26px;
   color: var(--c-light2);
+  transition: all ease-in-out 0.2s;
 }
-
+.navbar-nav .nav-link:hover {
+  /* font-weight: 500; */
+  transform: scale(1.05);
+  color: var(--c-brand);
+}
 .navbar-nav .nav-link.active {
   color: var(--c-brand);
 }
@@ -116,7 +121,7 @@ img {
 /* BTN */
 
 .btn {
-  font-weight: 600;
+  /* font-weight: 600; */
   font-size: 26px;
   text-transform: uppercase;
   border-radius: 0;
@@ -124,7 +129,7 @@ img {
 }
 
 .btn-brand {
-  background-color: var(--c-dark);
+  background-color: var(--c-brand);
   color: var(--c-light2);
 }
 .btn-brand-light {
@@ -133,9 +138,9 @@ img {
 }
 
 .btn-brand:hover {
-  background-color: var(--c-light);
-  border-color: var(--c-light);
-  color: var(--c-light2);
+  background-color: var(--c-light2);
+  border-color: var(--c-light2);
+  color: var(--c-brand);
 }
 .btn-brand-light:hover {
   background-color: var(--c-brand);
@@ -196,7 +201,7 @@ h2 {
 
 .section-title p {
   color: var(--c-body);
-  max-width: 500px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   font-size: 20px;
@@ -205,9 +210,37 @@ h2 {
 
 #about {
   background-color: var(--c-light);
+  /* text-align: center; */
 }
-/* #abt-img {
-} */
+
+#abt-img-cont {
+  color: white;
+  background: linear-gradient(
+      rgba(var(--c-brand-rgb), 0.507),
+      rgba(var(--c-brand-rgb), 0.538)
+    ),
+    url(../images/about.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 550px;
+  height: 550px;
+}
+#about .hr-top {
+  margin: 60px auto auto auto;
+  border-top: 3px solid var(--c-dark3);
+  width: 33%;
+}
+.about-bottom {
+  color: var(--c-light2);
+  text-align: center;
+  margin-top: 30px;
+  font-size: 27px;
+}
+#about .hr-bottom {
+  margin: 30px auto auto auto;
+  border-top: 3px solid var(--c-dark3);
+  width: 50%;
+}
 
 /* ICON BOX */
 
@@ -218,7 +251,7 @@ h2 {
   align-items: center;
   justify-content: center;
   background: rgba(var(--c-brand-rgb2), 0.1);
-  color: var(--c-brand);
+  color: var(--c-light2);
   font-size: 34px;
   flex: none;
 }
@@ -226,19 +259,49 @@ h2 {
   color: var(--c-dark);
 }
 .abouth5 {
-  color: var(--c-brand);
+  color: var(--c-light2);
 }
 
 /* OFFERINGS */
-
+#offerings {
+  background-color: var(--c-light2);
+}
 .offerings {
   position: relative;
   overflow: hidden;
   z-index: 2;
-  background-color: white;
+  cursor: pointer;
 }
+.offerings.family {
+  background: linear-gradient(
+      rgba(var(--c-brand-rgb), 0.997),
+      rgba(var(--c-brand-rgb), 0.638)
+    ),
+    url(../images/scales.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.offerings.criminal {
+  background: linear-gradient(
+      rgba(var(--c-brand-rgb), 0.997),
+      rgba(var(--c-brand-rgb), 0.638)
+    ),
+    url(../images/lady-justice2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.offerings.appeals {
+  background: linear-gradient(
+      rgba(var(--c-brand-rgb), 0.997),
+      rgba(var(--c-brand-rgb), 0.638)
+    ),
+    url(../images/appeals.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
 .offerings .iconbox {
-  background-color: rgb(228, 228, 228);
+  /* background-color: rgb(228, 228, 228); */
 }
 
 .offerings::after {
@@ -251,7 +314,16 @@ h2 {
   right: 0;
   transition: var(--transition);
 }
+.offerings p {
+  color: var(--c-light3);
+  font-size: 18px;
+  opacity: 0;
+  transition: all ease-in 0.1s;
+}
 
+.offerings:hover p {
+  opacity: 100;
+}
 .offerings:hover::after {
   width: 100%;
   height: 100%;
@@ -260,15 +332,12 @@ h2 {
 }
 
 .offerings h5 {
-  color: var(--c-dark);
+  color: var(--c-light2);
   font-size: 30px;
 }
-.offerings p {
-  font-size: 18px;
-}
-.offerings:hover h5,
-.offerings p {
-  color: white;
+
+.offerings:hover h5 {
+  color: var(--c-light3);
 }
 
 .offerings:hover .iconbox {
@@ -335,7 +404,13 @@ h2 {
   background-color: var(--c-dark3);
 }
 #speakers h1 {
-  color: var(--c-light);
+  color: var(--c-brand);
+}
+#speakers h4 {
+  color: var(--c-light1);
+}
+#speakers h5 {
+  color: var(--c-dark3);
 }
 
 .speaker-content {
@@ -348,10 +423,14 @@ h2 {
   padding: 24px;
   transition: var(--transition);
   opacity: 0;
+  cursor: pointer;
 }
 
 .speaker img {
-  opacity: 0.8;
+  opacity: 0.6;
+}
+.speaker:hover img {
+  opacity: 0.75;
 }
 
 .speaker:hover .speaker-content {
@@ -471,10 +550,6 @@ footer img {
   padding: 24px;
   transition: var(--transition);
   opacity: 0;
-}
-
-.speaker img {
-  opacity: 0.8;
 }
 
 .speaker:hover .speaker-content {
