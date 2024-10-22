@@ -266,6 +266,14 @@ h2 {
 #offerings {
   background-color: var(--c-light2);
 }
+.prac {
+  width: 26vw;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+.prac-sub {
+  display: none;
+}
 .offerings {
   position: relative;
   overflow: hidden;
