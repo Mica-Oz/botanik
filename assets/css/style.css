@@ -192,7 +192,7 @@ h2 {
   margin-bottom: 60px;
 }
 
-.section-title .line {
+.line {
   width: 60px;
   height: 4px;
   background-color: var(--c-brand);
@@ -268,11 +268,20 @@ h2 {
 }
 .prac {
   width: 26vw;
-  display: block;
-  transition: all 0.3s ease-in-out;
+  /* display: block; */
 }
+
 .prac-sub {
   display: none;
+  background-color: #e5d9ba;
+  padding: 30px;
+}
+.prac-sub h6 {
+  color: #a66738;
+}
+.prac-sub i {
+  color: #fffcf3;
+  width: 30px;
 }
 .offerings {
   position: relative;
@@ -341,11 +350,20 @@ h2 {
 
 .offerings h5 {
   color: var(--c-light2);
-  font-size: 30px;
+  font-size: 35px;
+  /* font-family: "Perpetua", serif; */
 }
 
 .offerings:hover h5 {
   color: var(--c-light3);
+}
+.sub-title {
+  color: #4e443f !important;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.sub-sub-tit {
+  text-decoration: underline;
 }
 
 .offerings:hover .iconbox {
