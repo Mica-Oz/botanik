@@ -172,7 +172,7 @@ img {
 }
 #hero h1 {
   color: #e5d9ba;
-  font-size: 120px;
+  font-size: 108px;
 }
 h1 {
   font-family: var(--font-title);
@@ -267,7 +267,7 @@ h2 {
   background-color: var(--c-light2);
 }
 .prac {
-  width: 26vw;
+  width: 22vw;
   /* display: block; */
 }
 
@@ -278,10 +278,15 @@ h2 {
 }
 .prac-sub h6 {
   color: #a66738;
+  margin-bottom: 30px;
 }
 .prac-sub i {
   color: #fffcf3;
   width: 30px;
+}
+.prac-sub .iconbox{
+  margin: 0px 0  30px 0;
+
 }
 .offerings {
   position: relative;
@@ -370,6 +375,7 @@ h2 {
   background-color: rgba(255, 255, 255, 0.12);
   color: white;
 }
+
 
 /* COUNTER */
 #counter {
