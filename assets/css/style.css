@@ -172,7 +172,7 @@ img {
 }
 #hero h1 {
   color: #e5d9ba;
-  font-size: 108px;
+  font-size: 120px;
 }
 h1 {
   font-family: var(--font-title);
@@ -225,7 +225,7 @@ h2 {
   width: 550px;
   height: 550px;
 }
-#about .hr-top {
+ .hr-top {
   margin: 60px auto auto auto;
   border-top: 3px solid var(--c-dark3);
   width: 33%;
@@ -234,9 +234,9 @@ h2 {
   color: var(--c-light2);
   text-align: center;
   margin-top: 30px;
-  font-size: 27px;
+  font-size: 35px;
 }
-#about .hr-bottom {
+ .hr-bottom {
   margin: 30px auto auto auto;
   border-top: 3px solid var(--c-dark3);
   width: 50%;
@@ -438,13 +438,26 @@ h2 {
 #speakers h1 {
   color: var(--c-brand);
 }
+#speakers h2 {
+  color: var(--c-light1);
+  font-family:var(--font-title);;
+}
 #speakers h4 {
   color: var(--c-light1);
 }
 #speakers h5 {
-  color: var(--c-dark3);
+  color: var(--c-light);
 }
-
+#speakers .dets-cont{
+  margin-top: 30px;
+}
+#speakers .dets-title{
+  font-size: 24px;;
+}
+#speakers .dets-area{
+  font-size: 22px;
+  color: var(--c-brand); 
+}
 .speaker-content {
   background-color: var(--c-brand);
   position: absolute;
