@@ -270,7 +270,7 @@ h2 {
   background-color: var(--c-light2);
 }
 .prac {
-  width: 26vw;
+  width: 22vw;
   /* display: block; */
 }
 
@@ -281,10 +281,14 @@ h2 {
 }
 .prac-sub h6 {
   color: #a66738;
+  margin-bottom: 30px;
 }
 .prac-sub i {
   color: #fffcf3;
   width: 30px;
+}
+.prac-sub .iconbox {
+  margin: 0px 0 30px 0;
 }
 .offerings {
   position: relative;
@@ -435,13 +439,27 @@ h2 {
 #speakers h1 {
   color: var(--c-brand);
 }
+#speakers h2 {
+  color: var(--c-light1);
+  font-family: var(--font-title);
+}
 #speakers h4 {
   color: var(--c-light1);
 }
 #speakers h5 {
-  color: var(--c-dark3);
+  color: var(--c-light);
 }
-.name-box h4 {
+#speakers .dets-cont {
+  margin-top: 30px;
+}
+#speakers .dets-title {
+  font-size: 24px;
+}
+#speakers .dets-area {
+  font-size: 22px;
+  color: var(--c-brand);
+}
+<<<<<<< HEAD .name-box h4 {
   color: var(--c-light2) !important;
   font-size: 2rem !important;
 }
@@ -458,7 +476,7 @@ h2 {
 .name-box {
   margin-top: 30px;
 }
-.speaker-content {
+=======>>>>>>>e33024c0f8b20253dd8a4abdc498b0a71bc97936 .speaker-content {
   background-color: var(--c-brand);
   position: absolute;
   bottom: -24px;
