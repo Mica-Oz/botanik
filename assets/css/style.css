@@ -661,9 +661,41 @@ footer img {
 #lawyers h1 {
   color: var(--c-dark);
 }
-
+#lawyers h3 {
+  color: var(--c-dark);
+}
+#lawyers p {
+  font-size: 17px;
+}
+.lawyer.row {
+  display: flex;
+  /* justify-content: space-between; */
+  /* width: 123%; */
+}
+#mackenzie.row {
+  justify-content: flex-end;
+  /* transform: translateX(-201px); */
+}
+.row.bio {
+  margin-top: 20px;
+}
+.bio p {
+  font-size: 20px !important;
+  text-indent: 100px;
+}
+#sarah .attorneyText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#mackenzie .attorneyText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 .speaker-content {
   background-color: var(--c-brand);
+  color: var(--c-light3);
   position: absolute;
   bottom: -24px;
   left: 50%;
