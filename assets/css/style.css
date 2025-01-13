@@ -479,6 +479,9 @@ h2 {
 #speakers h4 {
   color: var(--c-light1);
 }
+.hover-name {
+  font-size: 20px;
+}
 #speakers h5 {
   color: var(--c-light);
 }
