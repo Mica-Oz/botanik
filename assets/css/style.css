@@ -228,11 +228,11 @@ h2 {
 #abt-img-cont {
   color: white;
   background: linear-gradient(
-      rgba(var(--c-brand-rgb), 0.507),
-      rgba(var(--c-brand-rgb), 0.538)
+      rgba(var(--c-brand-rgb), 0.207),
+      rgba(var(--c-brand-rgb), 0.238)
     ),
-    url(../images/about.jpg);
-  background-position: center;
+    url(../images/About2.jpg);
+  /* background-position: center; */
   background-size: cover;
   width: 550px;
   height: 550px;
@@ -523,10 +523,10 @@ h2 {
 }
 
 .speaker img {
-  opacity: 0.6;
+  opacity: 0.9;
 }
 .speaker:hover img {
-  opacity: 0.75;
+  opacity: 1;
 }
 
 .speaker:hover .speaker-content {
@@ -665,7 +665,7 @@ footer img {
   color: var(--c-dark);
 }
 #lawyers p {
-  font-size: 17px;
+  margin-bottom: 0;
 }
 .lawyer.row {
   display: flex;
@@ -677,21 +677,52 @@ footer img {
   /* transform: translateX(-201px); */
 }
 .row.bio {
-  margin-top: 20px;
+  margin: 20px 1px;
+}
+.bio {
+  background-color: #f8f1d9;
 }
 .bio p {
   font-size: 20px !important;
   text-indent: 100px;
 }
+.attorneyText {
+  background-color: #e5d9ba;
+  padding: 10px;
+  overflow-y: scroll;
+}
+.attorneyText h3 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  height: 570px;
+}
 #sarah .attorneyText {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  height: 570px;
+  /* align-items: flex-end; */
 }
 #mackenzie .attorneyText {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  height: 570px;
+  overflow-y: scroll;
+}
+#zoe .attorneyText {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  height: 559px;
+  overflow-y: scroll;
+}
+#maryann .attorneyText {
+  height: 559px;
+}
+
+#mackenzie .bio {
+  width: 98.5%;
+  transform: translateX(-9px);
 }
 .speaker-content {
   background-color: var(--c-brand);
