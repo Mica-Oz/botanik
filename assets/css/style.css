@@ -524,10 +524,10 @@ h2 {
   opacity: 0;
   cursor: pointer;
 }
-
+/* 
 .speaker img {
   opacity: 0.9;
-}
+} */
 .speaker:hover img {
   opacity: 1;
 }
@@ -660,6 +660,7 @@ footer img {
 /* attorneys */
 #lawyers {
   background-color: var(--c-light);
+  padding-top: 50px;
 }
 #lawyers h1 {
   color: var(--c-dark);
@@ -675,19 +676,42 @@ footer img {
   /* justify-content: space-between; */
   /* width: 123%; */
 }
+#lawyers .section-title h1 {
+  color: var(--c-dark3) !important;
+}
 #mackenzie.row {
   justify-content: flex-end;
   /* transform: translateX(-201px); */
 }
+.title-cont {
+  position: absolute;
+  z-index: 3;
+  margin: 220px 230px;
+  text-align: center;
+}
+.title-cont h1 {
+  color: var(--c-dark2) !important;
+  font-size: 50px;
+}
+.title-cont h2 {
+  color: var(--c-dark1) !important;
+  font-size: 30px;
+}
 .row.bio {
-  margin: 20px 1px;
+  margin: 0px 1px;
+  padding: 40px 100px;
 }
 .bio {
-  background-color: #f8f1d9;
+  background-color: var(--c-light3);
 }
 .bio p {
-  font-size: 20px !important;
+  font-size: 22px !important;
   text-indent: 100px;
+}
+.bottom-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .attorneyText {
   background-color: #e5d9ba;
