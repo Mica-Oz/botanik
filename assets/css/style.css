@@ -735,6 +735,9 @@ footer img {
   .row.bio {
     padding: 20px 10px;
   }
+  #logo {
+    width: 13vw;
+  }
 }
 
 .bottom-group p {
