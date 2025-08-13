@@ -745,6 +745,13 @@ footer img {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  .bio p {
+    font-size: 18px !important;
+    text-indent: 20px;
+  }
+  .bio p span {
+    font-size: 20px !important;
+  }
 }
 
 .bottom-group p {
