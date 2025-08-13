@@ -238,6 +238,7 @@ h2 {
   background: url(../images/About3.jpg);
   /* background-position: center; */
   background-size: cover;
+  background-position: center;
   width: 550px;
   height: 550px;
   border: 15px solid #d0b192;
