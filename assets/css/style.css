@@ -741,6 +741,10 @@ footer img {
   #hero .row {
     transform: translateY(-100px);
   }
+  .section-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .bottom-group p {
