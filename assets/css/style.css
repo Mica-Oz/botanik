@@ -738,6 +738,9 @@ footer img {
   #logo {
     width: 13vw;
   }
+  #hero .row {
+    transform: translateY(-100px);
+  }
 }
 
 .bottom-group p {
