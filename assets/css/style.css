@@ -731,6 +731,9 @@ footer img {
   .bottom-group {
     margin-top: 25px;
   }
+  .row.bio {
+    padding: 20px 10px;
+  }
 }
 
 .bottom-group p {
