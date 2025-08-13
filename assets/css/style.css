@@ -752,6 +752,9 @@ footer img {
   .bio p .first-line {
     font-size: 20px !important;
   }
+  footer.footer-cont {
+    padding: 50px 0;
+  }
 }
 
 .bottom-group p {
