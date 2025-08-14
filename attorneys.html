@@ -44,6 +44,26 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            var navbarToggler = document.querySelector(".navbar-toggler");
+            var navbarCollapse = document.getElementById("navbarNav");
+
+            document.addEventListener("click", function (event) {
+              var isNavbarOpen = navbarCollapse.classList.contains("show");
+              var isClickInsideNavbar =
+                navbarCollapse.contains(event.target) ||
+                navbarToggler.contains(event.target);
+
+              if (isNavbarOpen && !isClickInsideNavbar) {
+                var bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+                if (bsCollapse) {
+                  bsCollapse.hide();
+                }
+              }
+            });
+          });
+        </script>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">

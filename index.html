@@ -49,6 +49,25 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <script>
+          $(document).ready(function () {
+            $(document).on('click', function (event) {
+              var $navbarCollapse = $('#navbarNav');
+              var $navbarToggler = $('.navbar-toggler');
+              // If menu is open and click is outside menu and toggler
+              if (
+          $navbarCollapse.hasClass('show') &&
+          !$navbarCollapse.is(event.target) &&
+          $navbarCollapse.has(event.target).length === 0 &&
+          !$navbarToggler.is(event.target) &&
+          $navbarToggler.has(event.target).length === 0
+              ) {
+          $navbarCollapse.collapse('hide');
+              }
+            });
+          });
+        </script>
+        </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
