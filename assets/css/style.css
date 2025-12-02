@@ -538,7 +538,25 @@ h2 {
   opacity: 1;
   bottom: 24px;
 }
-
+/* LOCATIONS */
+#locations .card {
+  color: #4e443f;
+}
+.get-directions-btn {
+  border: #a66738 3px solid;
+  color: #a66738;
+}
+.get-directions-btn:hover {
+  background-color: #a66738;
+  color: #fff;
+  border: #a66738 3px solid;
+}
+.accordion {
+  --bs-accordion-active-bg: var(--c-light2);
+  --bs-accordion-active-color: var(--c-dark);
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-btn-color: var(--c-dark3);
+}
 /* CONTACT */
 
 #contact {
