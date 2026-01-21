@@ -289,8 +289,8 @@ h2 {
   color: var(--c-brand);
 }
 
-/* OFFERINGS */
-#offerings {
+/* PRACTICE */
+#practice {
   background-color: var(--c-light2);
 }
 .box-row {
@@ -467,33 +467,33 @@ h2 {
   transform: rotate(45deg);
 }
 
-/* SPEAKERS */
-#speakers {
+/* TEAM */
+#team {
   background-color: var(--c-dark3);
 }
-#speakers h1 {
+#team h1 {
   color: var(--c-brand);
 }
-#speakers h2 {
+#team h2 {
   color: var(--c-light1);
   font-family: var(--font-title);
 }
-#speakers h4 {
+#team h4 {
   color: var(--c-light1);
 }
 .hover-name {
   font-size: 20px;
 }
-#speakers h5 {
+#team h5 {
   color: var(--c-light);
 }
-#speakers .dets-cont {
+#team .dets-cont {
   margin-top: 30px;
 }
-#speakers .dets-title {
+#team .dets-title {
   font-size: 24px;
 }
-#speakers .dets-area {
+#team .dets-area {
   font-size: 22px;
   color: var(--c-brand);
 }
