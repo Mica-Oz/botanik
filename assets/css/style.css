@@ -557,6 +557,73 @@ h2 {
   --bs-accordion-btn-focus-box-shadow: none;
   --bs-accordion-btn-color: var(--c-dark3);
 }
+
+/* Location Image Hover Effect */
+.location-card {
+  display: flex;
+  flex-direction: column;
+}
+.location-image-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.location-image-container .image-zoom-wrapper {
+  background-color: var(--c-brand);
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  position: relative;
+}
+.location-image-container .image-zoom-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(var(--c-brand-rgb), 0.4),
+    rgba(var(--c-brand-rgb), 0.42)
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+.location-image-container .image-zoom-wrapper a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+}
+.location-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+.location-image-container:hover .location-image {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+.location-hover-content {
+  background-color: var(--c-brand);
+  color: var(--c-light3);
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  width: calc(100% - 50px);
+  transform: translate(-50%);
+  padding: 24px;
+  transition: var(--transition);
+  opacity: 0;
+  cursor: pointer;
+  pointer-events: none;
+  z-index: 2;
+}
+.location-image-container:hover .location-hover-content {
+  opacity: 1;
+  bottom: 24px;
+}
 /* CONTACT */
 
 #contact {
@@ -857,4 +924,8 @@ footer img {
 }
 #privacy p {
   font-size: 18px;
+}
+/* location landing pages */
+#location-hero {
+  background-color: var(--c-light2) !important;
 }
